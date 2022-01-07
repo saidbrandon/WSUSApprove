@@ -1,6 +1,6 @@
 WSUSApprove
 ===========
-Console Application to Approve WSUS Updates written in C#.
+Console Application to approve WSUS updates written in C#.
 
 Problems fixed by WSUSApprove:
 - Never use the WSUS MMC to approve updates again
@@ -54,7 +54,8 @@ Approval Rings specify the number of days required to elapase before presenting 
     <add key="Ring 2 - Servers - Production - Delayed" value="3"/>
 </Groups>
 ```
-Associate your WSUS groups with a default approval delay. If the groups defined here don't exist, they won't be visible during execution. Additionally, if you have other groups that aren't listed, they won't be visible either. For example, if you ignore these settings and run the application you will only see the following output:
+Associate your WSUS groups with a default approval delay. The key is your WSUS group name and the value is the ApprovalRing key.   
+If the groups defined here don't exist, they won't be visible during execution. Additionally, if you have other groups that aren't listed, they won't be visible either. For example, if you ignore this setting and run the application you will only see the following output:
 ```text
 -----------------------------------------------------------------------------------
 | Groups                                                                          |
@@ -178,6 +179,7 @@ Approving Update - Windows Malicious Software Removal Tool x64 - v5.96 (KB890830
 Approving Update - Windows Malicious Software Removal Tool - v5.96 (KB890830)...
 Total Updates: 9, Visible Updates: 9, Approved Updates: 9
 ```
+** Approving Update - Update Title ** is highlighted in yellow for visibility and easy reading, but not within the Readme.
 
 ## Command Line Arguments
 ```text
@@ -196,3 +198,8 @@ Total Updates: 9, Visible Updates: 9, Approved Updates: 9
 --WhatIf
     If specified, and you approve an update, the update will display information as if it was approved, but doesn't actually approve.
 ```
+
+## Additional Licenses
+[CommandLineParser](https://github.com/commandlineparser/commandline) - https://github.com/commandlineparser/commandline/blob/master/License.md   
+[CsConsoleFormat](https://github.com/Athari/CsConsoleFormat) - https://github.com/Athari/CsConsoleFormat/blob/master/License.md
+
