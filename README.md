@@ -2,7 +2,7 @@ WSUSApprove
 ===========
 Console Application to approve WSUS updates written in C#.
 
-Problems fixed by WSUSApprove:
+Problems addressed by WSUSApprove:
 - Never use the WSUS MMC to approve updates again
 - Only approve updates that are older than x days or weeks
 - Approve or ignore updates for specific Product Families i.e. "SQL Server" or "Exchange"
