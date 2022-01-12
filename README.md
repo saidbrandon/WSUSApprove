@@ -1,6 +1,6 @@
 WSUSApprove
 ===========
-![GitHub all releases](https://img.shields.io/github/downloads/saidbrandon/WSUSApprove/total)   
+![GitHub all releases](https://img.shields.io/github/downloads/saidbrandon/WSUSApprove/total?label=GitHub%20Downloads)   
 Console Application to approve WSUS updates written in C#.
 
 Problems addressed by WSUSApprove:
